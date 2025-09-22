@@ -1,0 +1,747 @@
+
+> Configure project :
+Fabric Loom: 1.10.0-bta
+
+> Task :dependencies
+
+------------------------------------------------------------
+Root project 'bta-tweaks-7.3'
+------------------------------------------------------------
+
+annotationProcessor - Annotation processors and their dependencies for source set 'main'.
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
+|    \--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
+\--- net.fabricmc:fabric-mixin-compile-extensions:0.6.0
+     +--- net.fabricmc:mapping-io:0.2.1
+     |    \--- org.ow2.asm:asm:9.1 -> 9.6
+     +--- net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5 -> 0.12.5+mixin.0.8.5
+     +--- org.ow2.asm:asm-tree:9.4 -> 9.6 (*)
+     \--- org.ow2.asm:asm:9.4 -> 9.6
+
+api - API dependencies for the 'main' feature. (n)
+No dependencies
+
+apiElements - API elements for the 'main' feature. (n)
+No dependencies
+
+cfrDecompilerClasspath
+\--- net.fabricmc:cfr:0.2.2
+
+compileClasspath - Compile classpath for source set 'main'.
++--- org.jetbrains:annotations:25.0.0
++--- org.slf4j:slf4j-api:1.8.0-beta4
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    \--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
++--- com.google.guava:guava:33.0.0-jre
+|    +--- com.google.guava:failureaccess:1.0.2
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:3.41.0
+|    +--- com.google.errorprone:error_prone_annotations:2.23.0
+|    \--- com.google.j2objc:j2objc-annotations:2.8
++--- com.google.code.gson:gson:2.10.1
++--- org.apache.logging.log4j:log4j-core:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.commons:commons-lang3:3.12.0
++--- org.lwjgl:lwjgl-bom:3.3.4
+|    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
++--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-assimp:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-glfw:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-openal:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-opengl:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-stb:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
++--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
+\--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
+
+compileOnly - Compile-only dependencies for the 'main' feature. (n)
+\--- org.jetbrains:annotations:25.0.0 (n)
+
+compileOnlyApi - Compile-only API dependencies for the 'main' feature. (n)
+No dependencies
+
+default - Configuration for default artifacts. (n)
+No dependencies
+
+fernflowerDecompilerClasspath
+\--- net.fabricmc:fabric-fernflower:2.0.0
+     \--- org.jetbrains:annotations:20.1.0
+
+implementation - Implementation dependencies for the 'main' feature. (n)
++--- org.slf4j:slf4j-api:1.8.0-beta4 (n)
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0 (n)
++--- com.google.guava:guava:33.0.0-jre (n)
++--- com.google.code.gson:gson:2.10.1 (n)
++--- org.apache.logging.log4j:log4j-core:2.20.0 (n)
++--- org.apache.logging.log4j:log4j-api:2.20.0 (n)
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0 (n)
++--- org.apache.commons:commons-lang3:3.12.0 (n)
++--- org.lwjgl:lwjgl-bom:3.3.4 (n)
++--- org.lwjgl:lwjgl:3.3.4 (n)
++--- org.lwjgl:lwjgl-assimp:3.3.4 (n)
++--- org.lwjgl:lwjgl-glfw:3.3.4 (n)
++--- org.lwjgl:lwjgl-openal:3.3.4 (n)
++--- org.lwjgl:lwjgl-opengl:3.3.4 (n)
+\--- org.lwjgl:lwjgl-stb:3.3.4 (n)
+
+include (n)
+\--- org.apache.commons:commons-lang3:3.12.0 (n)
+
+includeInternal
+\--- org.apache.commons:commons-lang3:3.12.0
+
+loaderLibraries
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
+\--- io.github.llamalad7:mixinextras-fabric:0.3.2
+
+localRuntime
+No dependencies
+
+loomDevelopmentDependencies
++--- net.fabricmc:dev-launch-injector:0.2.1+build.8
+\--- net.minecrell:terminalconsoleappender:1.3.0
+     +--- org.apache.logging.log4j:log4j-core:2.8.1
+     |    \--- org.apache.logging.log4j:log4j-api:2.8.1
+     \--- org.jline:jline-reader:3.20.0
+          \--- org.jline:jline-terminal:3.20.0
+
+mainSourceElements - List of source directories contained in the Main SourceSet. (n)
+No dependencies
+
+mappings
+\--- loom:mappings:layered+hash.31
+
+mappingsConstants
+No dependencies
+
+mappingsFinal
+No dependencies
+
+minecraft (n)
+\--- :7.3_04 (n)
+
+minecraftClientLibraries
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
+\--- net.java.jutils:jutils:1.0.0
+
+minecraftClientRuntimeLibraries
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
+\--- net.java.jutils:jutils:1.0.0
+
+minecraftLibraries
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
+\--- net.java.jutils:jutils:1.0.0
+
+minecraftNamedCompile
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
+\--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
+
+minecraftNamedRuntime
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.fabricmc:dev-launch-injector:0.2.1+build.8
++--- net.minecrell:terminalconsoleappender:1.3.0
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
+\--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
+
+minecraftNatives
+\--- net.java.jinput:jinput-platform:2.0.5
+
+minecraftRuntimeLibraries
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
+\--- net.java.jutils:jutils:1.0.0
+
+minecraftServerLibraries
+No dependencies
+
+minecraftServerRuntimeLibraries
+No dependencies
+
+minecraftTestClientRuntimeLibraries
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
+\--- net.java.jinput:jinput-platform:2.0.5
+
+modApi
+No dependencies
+
+modApiMapped
+No dependencies
+
+modCompileClasspath
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- turniplabs:halplibe:5.3.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
+|    |    \--- org.apache.logging.log4j:log4j-core:2.16.0 -> 2.20.0
+|    |         \--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- com.google.guava:guava:33.0.0-jre
+|    |    +--- com.google.guava:failureaccess:1.0.2
+|    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    +--- org.checkerframework:checker-qual:3.41.0
+|    |    \--- com.google.errorprone:error_prone_annotations:2.23.0
+|    +--- com.google.code.gson:gson:2.10.1
+|    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    |    \--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    +--- org.lwjgl:lwjgl-bom:3.3.4
+|    |    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    |    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-openal:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-stb:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl -> 3.3.4
+|    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    +--- turniplabs:modmenu-bta:3.0.0
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0 (*)
+|    |    +--- com.google.guava:guava:33.0.0-jre (*)
+|    |    +--- com.google.code.gson:gson:2.10.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    +--- org.apache.logging.log4j:log4j-1.2-api:2.20.0 (*)
+|    |    +--- org.apache.commons:commons-lang3:3.12.0
+|    |    +--- org.lwjgl:lwjgl-bom:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl:3.3.4
+|    |    +--- org.lwjgl:lwjgl-assimp:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-glfw:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-openal:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-opengl:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-stb:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl -> 3.3.4
+|    |    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    |    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    |    +--- com.github.zarzelcow:legacy-lwjgl3:1.0.4
+|    |    |    +--- org.javassist:javassist:3.29.2-GA
+|    |    |    +--- org.lwjgl:lwjgl-bom:3.3.1 -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl -> 3.3.4
+|    |    |    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    |    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    |    |    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
+|    |    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
+|    +--- com.github.zarzelcow:legacy-lwjgl3:1.0.4 (*)
+|    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
++--- turniplabs:modmenu-bta:3.0.0 (*)
+\--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
+     +--- org.lwjgl:lwjgl-bom:3.3.4 (*)
+     +--- org.lwjgl:lwjgl -> 3.3.4
+     +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+     \--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+
+modCompileClasspathMainMapped
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
+\--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
+
+modCompileClasspathMapped
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
+\--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
+
+modCompileOnly
+No dependencies
+
+modCompileOnlyApi
+No dependencies
+
+modImplementation
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- turniplabs:halplibe:5.3.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
+|    |    \--- org.apache.logging.log4j:log4j-core:2.16.0 -> 2.20.0
+|    |         \--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- com.google.guava:guava:33.0.0-jre
+|    |    +--- com.google.guava:failureaccess:1.0.2
+|    |    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    |    +--- com.google.code.findbugs:jsr305:3.0.2
+|    |    +--- org.checkerframework:checker-qual:3.41.0
+|    |    \--- com.google.errorprone:error_prone_annotations:2.23.0
+|    +--- com.google.code.gson:gson:2.10.1
+|    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    |    \--- org.apache.logging.log4j:log4j-api:2.20.0
+|    +--- org.apache.commons:commons-lang3:3.12.0
+|    +--- org.lwjgl:lwjgl-bom:3.3.4
+|    |    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    |    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    |    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-openal:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl-stb:3.3.4
+|    |    \--- org.lwjgl:lwjgl:3.3.4
+|    +--- org.lwjgl:lwjgl -> 3.3.4
+|    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    +--- turniplabs:modmenu-bta:3.0.0
+|    |    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    |    +--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0 (*)
+|    |    +--- com.google.guava:guava:33.0.0-jre (*)
+|    |    +--- com.google.code.gson:gson:2.10.1
+|    |    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    +--- org.apache.logging.log4j:log4j-1.2-api:2.20.0 (*)
+|    |    +--- org.apache.commons:commons-lang3:3.12.0
+|    |    +--- org.lwjgl:lwjgl-bom:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl:3.3.4
+|    |    +--- org.lwjgl:lwjgl-assimp:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-glfw:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-openal:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-opengl:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-stb:3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl -> 3.3.4
+|    |    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    |    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    |    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    |    +--- com.github.zarzelcow:legacy-lwjgl3:1.0.4
+|    |    |    +--- org.javassist:javassist:3.29.2-GA
+|    |    |    +--- org.lwjgl:lwjgl-bom:3.3.1 -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl -> 3.3.4
+|    |    |    +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+|    |    |    +--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
+|    |    |    +--- org.apache.logging.log4j:log4j-api:2.20.0
+|    |    |    +--- net.fabricmc:fabric-loader:0.15.6-bta.7
+|    |    |    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
+|    |    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
+|    +--- com.github.zarzelcow:legacy-lwjgl3:1.0.4 (*)
+|    \--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
++--- turniplabs:modmenu-bta:3.0.0 (*)
+\--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
+     +--- org.lwjgl:lwjgl-bom:3.3.4 (*)
+     +--- org.lwjgl:lwjgl -> 3.3.4
+     +--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+     +--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
+     \--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+
+modLocalRuntime
+No dependencies
+
+modRuntimeClasspathMainMapped
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
++--- org.slf4j:slf4j-api:1.8.0-beta4
++--- com.google.guava:guava:33.0.0-jre
++--- com.google.code.gson:gson:2.10.1
++--- org.apache.logging.log4j:log4j-core:2.20.0
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
++--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.commons:commons-lang3:3.12.0
++--- org.lwjgl:lwjgl-assimp:3.3.4
++--- org.lwjgl:lwjgl-glfw:3.3.4
++--- org.lwjgl:lwjgl-openal:3.3.4
++--- org.lwjgl:lwjgl-opengl:3.3.4
++--- org.lwjgl:lwjgl-stb:3.3.4
++--- org.lwjgl:lwjgl:3.3.4
++--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
++--- com.google.guava:failureaccess:1.0.2
++--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
++--- com.google.code.findbugs:jsr305:3.0.2
++--- org.checkerframework:checker-qual:3.41.0
++--- com.google.errorprone:error_prone_annotations:2.23.0
++--- org.javassist:javassist:3.29.2-GA
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
+\--- loom_mappings_7_3_04_layered_hash_31_v2.com.github.zarzelcow:legacy-lwjgl3:1.0.4
+
+modRuntimeOnly
+\--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
+
+namedElements (n)
+No dependencies
+
+productionRuntimeMods
+No dependencies
+
+runtimeClasspath - Runtime classpath of source set 'main'.
++--- org.slf4j:slf4j-api:1.8.0-beta4
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    +--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
+|    \--- org.apache.logging.log4j:log4j-core:2.16.0 -> 2.20.0
+|         \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- com.google.guava:guava:33.0.0-jre
+|    +--- com.google.guava:failureaccess:1.0.2
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:3.41.0
+|    \--- com.google.errorprone:error_prone_annotations:2.23.0
++--- com.google.code.gson:gson:2.10.1
++--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
++--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.commons:commons-lang3:3.12.0
++--- org.lwjgl:lwjgl-bom:3.3.4
+|    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
++--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-assimp:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-glfw:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-openal:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-opengl:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-stb:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.fabricmc:dev-launch-injector:0.2.1+build.8
++--- net.minecrell:terminalconsoleappender:1.3.0
+|    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.20.0 (*)
+|    \--- org.jline:jline-reader:3.20.0
+|         \--- org.jline:jline-terminal:3.20.0
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
++--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
++--- com.google.guava:failureaccess:1.0.2
++--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
++--- com.google.code.findbugs:jsr305:3.0.2
++--- org.checkerframework:checker-qual:3.41.0
++--- com.google.errorprone:error_prone_annotations:2.23.0
++--- org.javassist:javassist:3.29.2-GA
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.com.github.zarzelcow:legacy-lwjgl3:1.0.4
++--- org.lwjgl:lwjgl -> 3.3.4
++--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+\--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+
+runtimeElements - Runtime elements for the 'main' feature. (n)
+No dependencies
+
+runtimeOnly - Runtime-only dependencies for the 'main' feature. (n)
++--- org.lwjgl:lwjgl (n)
++--- org.lwjgl:lwjgl-assimp (n)
++--- org.lwjgl:lwjgl-glfw (n)
++--- org.lwjgl:lwjgl-openal (n)
++--- org.lwjgl:lwjgl-opengl (n)
+\--- org.lwjgl:lwjgl-stb (n)
+
+sourcesElements - sources elements for main. (n)
+No dependencies
+
+testAnnotationProcessor - Annotation processors and their dependencies for source set 'test'.
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
+|    \--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
+\--- net.fabricmc:fabric-mixin-compile-extensions:0.6.0
+     +--- net.fabricmc:mapping-io:0.2.1
+     |    \--- org.ow2.asm:asm:9.1 -> 9.6
+     +--- net.fabricmc:sponge-mixin:0.11.4+mixin.0.8.5 -> 0.12.5+mixin.0.8.5
+     +--- org.ow2.asm:asm-tree:9.4 -> 9.6 (*)
+     \--- org.ow2.asm:asm:9.4 -> 9.6
+
+testCompileClasspath - Compile classpath for source set 'test'.
++--- org.slf4j:slf4j-api:1.8.0-beta4
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    \--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
++--- com.google.guava:guava:33.0.0-jre
+|    +--- com.google.guava:failureaccess:1.0.2
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:3.41.0
+|    +--- com.google.errorprone:error_prone_annotations:2.23.0
+|    \--- com.google.j2objc:j2objc-annotations:2.8
++--- com.google.code.gson:gson:2.10.1
++--- org.apache.logging.log4j:log4j-core:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.commons:commons-lang3:3.12.0
++--- org.lwjgl:lwjgl-bom:3.3.4
+|    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
++--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-assimp:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-glfw:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-openal:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-opengl:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-stb:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
++--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
+\--- org.jetbrains:annotations:25.0.0
+
+testCompileOnly - Compile only dependencies for source set 'test'. (n)
+\--- org.jetbrains:annotations:25.0.0 (n)
+
+testImplementation - Implementation only dependencies for source set 'test'. (n)
+No dependencies
+
+testRuntimeClasspath - Runtime classpath of source set 'test'.
++--- org.slf4j:slf4j-api:1.8.0-beta4
++--- org.apache.logging.log4j:log4j-slf4j18-impl:2.16.0
+|    +--- org.slf4j:slf4j-api:1.8.0-beta4
+|    +--- org.apache.logging.log4j:log4j-api:2.16.0 -> 2.20.0
+|    \--- org.apache.logging.log4j:log4j-core:2.16.0 -> 2.20.0
+|         \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- com.google.guava:guava:33.0.0-jre
+|    +--- com.google.guava:failureaccess:1.0.2
+|    +--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
+|    +--- com.google.code.findbugs:jsr305:3.0.2
+|    +--- org.checkerframework:checker-qual:3.41.0
+|    \--- com.google.errorprone:error_prone_annotations:2.23.0
++--- com.google.code.gson:gson:2.10.1
++--- org.apache.logging.log4j:log4j-core:2.20.0 (*)
++--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.logging.log4j:log4j-1.2-api:2.20.0
+|    \--- org.apache.logging.log4j:log4j-api:2.20.0
++--- org.apache.commons:commons-lang3:3.12.0
++--- org.lwjgl:lwjgl-bom:3.3.4
+|    +--- org.lwjgl:lwjgl:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-assimp:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-glfw:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-openal:3.3.4 (c)
+|    +--- org.lwjgl:lwjgl-opengl:3.3.4 (c)
+|    \--- org.lwjgl:lwjgl-stb:3.3.4 (c)
++--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-assimp:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-glfw:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-openal:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-opengl:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.lwjgl:lwjgl-stb:3.3.4
+|    \--- org.lwjgl:lwjgl:3.3.4
++--- org.ow2.asm:asm:9.6
++--- org.ow2.asm:asm-analysis:9.6
++--- org.ow2.asm:asm-commons:9.6
++--- org.ow2.asm:asm-tree:9.6
++--- org.ow2.asm:asm-util:9.6
++--- net.fabricmc:sponge-mixin:0.12.5+mixin.0.8.5
++--- io.github.llamalad7:mixinextras-fabric:0.3.2
++--- net.fabricmc:dev-launch-injector:0.2.1+build.8
++--- net.minecrell:terminalconsoleappender:1.3.0
+|    +--- org.apache.logging.log4j:log4j-core:2.8.1 -> 2.20.0 (*)
+|    \--- org.jline:jline-reader:3.20.0
+|         \--- org.jline:jline-terminal:3.20.0
++--- net.minecraft:launchwrapper:1.5
++--- net.sf.jopt-simple:jopt-simple:4.5
++--- net.java.jinput:jinput:2.0.5
++--- net.java.jutils:jutils:1.0.0
++--- net.minecraft:minecraft-merged-07644d7df3:7.3_04-loom.mappings.7_3_04.layered+hash.31-v2
++--- net.fabricmc:fabric-loader:0.15.6-bta.7
++--- com.github.Better-than-Adventure:legacy-lwjgl3:1.0.5
++--- objects:client:43db9b498cb67058d2e12d394e6507722e71bb45
++--- com.google.guava:failureaccess:1.0.2
++--- com.google.guava:listenablefuture:9999.0-empty-to-avoid-conflict-with-guava
++--- com.google.code.findbugs:jsr305:3.0.2
++--- org.checkerframework:checker-qual:3.41.0
++--- com.google.errorprone:error_prone_annotations:2.23.0
++--- org.javassist:javassist:3.29.2-GA
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:halplibe:5.3.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.turniplabs:modmenu-bta:3.0.0
++--- loom_mappings_7_3_04_layered_hash_31_v2.com.github.zarzelcow:legacy-lwjgl3:1.0.4
++--- org.lwjgl:lwjgl -> 3.3.4
++--- org.lwjgl:lwjgl-assimp -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-glfw -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-openal -> 3.3.4 (*)
++--- org.lwjgl:lwjgl-opengl -> 3.3.4 (*)
+\--- org.lwjgl:lwjgl-stb -> 3.3.4 (*)
+
+testRuntimeOnly - Runtime only dependencies for source set 'test'. (n)
+No dependencies
+
+unpick
+No dependencies
+
+vineflowerDecompilerClasspath
+\--- org.vineflower:vineflower:1.11.1
+
+(c) - A dependency constraint, not a dependency. The dependency affected by the constraint occurs elsewhere in the tree.
+(*) - Indicates repeated occurrences of a transitive dependency subtree. Gradle expands transitive dependency subtrees only once per project; repeat occurrences only display the root of the subtree, followed by this annotation.
+
+(n) - A dependency or dependency configuration that cannot be resolved.
+
+A web-based, searchable dependency report is available by adding the --scan option.
+
+BUILD SUCCESSFUL in 1s
+1 actionable task: 1 executed

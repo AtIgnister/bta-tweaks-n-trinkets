@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "examplemod",
+  "version": "${version}",
+
+  "name": "Example Mod",
+  "description": "This mod aims to help new BTA modders.",
+  "authors": [
+    "Turnip Labs"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+	"icon": "icon.png",
+  "license": "CC0-1.0",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+			"kami.tweaksntrinkets.TweaksNTrinkets"
+    ],
+		"beforeGameStart": [
+			"kami.tweaksntrinkets.TweaksNTrinkets"
+		],
+		"afterGameStart": [
+			"kami.tweaksntrinkets.TweaksNTrinkets"
+		],
+		"recipesReady": [
+			"kami.tweaksntrinkets.TweaksNTrinkets"
+		],
+		"initModels": [
+			"kami.tweaksntrinkets.ModModels"
+		]
+	},
+  "mixins": [
+      "examplemod.mixins.json"
+  ],
+
+  "depends": {
+		"minecraft": "*",
+    "fabricloader": ">=0.15.5"
+  },
+  "suggests": {
+  }
+}
