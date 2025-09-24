@@ -1,0 +1,22 @@
+[
+  {
+    "name": "tweaksntrinkets:blocks/nether_torch",
+    "type": "minecraft:crafting/shapeless",
+    "inputs": [
+      {
+        "stack": {
+          "id": "minecraft:item/stick"
+        }
+      },
+      {
+        "stack": {
+          "id": "minecraft:block/torch_coal"
+        }
+      }
+    ],
+    "result": {
+      "id": "tweaksntrinkets:block/nether_torch"
+    },
+    "consumeContainers": true
+  }
+]

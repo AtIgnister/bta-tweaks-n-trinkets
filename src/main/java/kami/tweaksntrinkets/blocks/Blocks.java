@@ -1,7 +1,9 @@
 package kami.tweaksntrinkets.blocks;
 
+import kami.tweaksntrinkets.items.Items;
 import net.minecraft.core.block.Block;
 import kami.tweaksntrinkets.TweaksNTrinkets;
+import net.minecraft.core.item.ItemStack;
 import turniplabs.halplibe.helper.BlockBuilder;
 
 public class Blocks {

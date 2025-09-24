@@ -1,2 +1,4 @@
-tile.nethertorch.nether.torch.name = Nether Torch
-tile.nethertorch.nether.torch.desc = A Torch made of Nether Coal... Spooky.
+tile.tweaksntrinkets.nether.torch.name = Nether Torch
+tile.tweaksntrinkets.nether.torch.desc = A Torch made of Nether Coal... Spooky.
+item.tweaksntrinkets.magicmirror.name = Magic Mirror
+item.tweaksntrinkets.magicmirror.desc = A legally distinct magic mirror.

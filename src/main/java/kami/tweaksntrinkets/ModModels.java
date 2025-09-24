@@ -1,5 +1,6 @@
 package kami.tweaksntrinkets;
 
+import kami.tweaksntrinkets.items.Items;
 import net.minecraft.client.render.EntityRenderDispatcher;
 import net.minecraft.client.render.TileEntityRenderDispatcher;
 import net.minecraft.client.render.block.color.BlockColorDispatcher;
@@ -7,6 +8,7 @@ import net.minecraft.client.render.block.model.BlockModelDispatcher;
 import net.minecraft.client.render.block.model.BlockModelTorch;
 import net.minecraft.client.render.item.model.ItemModelDispatcher;
 import kami.tweaksntrinkets.blocks.Blocks;
+import net.minecraft.client.render.item.model.ItemModelStandard;
 import turniplabs.halplibe.helper.ModelHelper;
 import turniplabs.halplibe.util.ModelEntrypoint;
 
@@ -20,6 +22,8 @@ public class ModModels implements ModelEntrypoint {
 
 	@Override
 	public void initItemModels(ItemModelDispatcher dispatcher) {
+		ModelHelper.setItemModel(Items.MagicMirror,() ->
+			new ItemModelStandard(Items.MagicMirror, "TweaksNTrinkets.MagicMirror").setIcon(TweaksNTrinkets.MOD_ID + ":block/magicmirror"));
 
 	}
 

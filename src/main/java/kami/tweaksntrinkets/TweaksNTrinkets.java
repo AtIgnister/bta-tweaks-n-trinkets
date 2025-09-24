@@ -1,10 +1,14 @@
 package kami.tweaksntrinkets;
 
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.client.render.texture.stitcher.TextureRegistry;
-import net.minecraft.client.sound.SoundRepository;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.Blocks;
+import net.minecraft.core.data.DataLoader;
+import net.minecraft.core.data.registry.Registries;
+import net.minecraft.core.data.registry.recipe.RecipeGroup;
+import net.minecraft.core.data.registry.recipe.RecipeNamespace;
+import net.minecraft.core.data.registry.recipe.RecipeSymbol;
+import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
 import org.slf4j.Logger;
@@ -13,14 +17,16 @@ import turniplabs.halplibe.helper.RecipeBuilder;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
-import java.io.IOException;
-import java.net.URISyntaxException;
-
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameStartEntrypoint { ;
     public static final String MOD_ID = "tweaksntrinkets";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 	public static Block<?> NetherTorchBlockModel;
+
+	public final RecipeNamespace TWEAKSNTRINKETS = new RecipeNamespace();
 
     @Override
     public void onInitialize() {
@@ -32,31 +38,30 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 
 	@Override
 	public void onRecipesReady() {
+		RecipeGroup<RecipeEntryCrafting<?,?>> WORKBENCH = new RecipeGroup<>(new RecipeSymbol(new ItemStack(Blocks.WORKBENCH)));
+		TWEAKSNTRINKETS.register("blocks", WORKBENCH);
+
+		List<ItemStack> itemStacks = new LinkedList<>();
+		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock));
+		Registries.ITEM_GROUPS.register("blocks", itemStacks);
+
+
+		DataLoader.loadRecipesFromFile("/assets/tweaksntrinkets/recipe/workbench.json");
+
 		RecipeBuilder.Shapeless(MOD_ID)
 			.addInput(Items.NETHERCOAL)
 			.addInput(Blocks.TORCH_COAL)
-			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 2));
+			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 4));
 	}
 
 	@Override
 	public void initNamespaces() {
-
+		Registries.RECIPES.register("tweaksntrinkets", this.TWEAKSNTRINKETS);
 	}
 
 	@Override
 	public void beforeGameStart() {
-		try {
-			TextureRegistry.initializeAllFiles(TweaksNTrinkets.MOD_ID, TextureRegistry.blockAtlas, true);
-			TextureRegistry.initializeAllFiles(TweaksNTrinkets.MOD_ID, TextureRegistry.itemAtlas, true);
-		} catch (URISyntaxException | IOException e) {
-			throw new RuntimeException(e);
-		}
-
-		try {
-			SoundRepository.registerNamespace(TweaksNTrinkets.MOD_ID);
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		}
+		new kami.tweaksntrinkets.items.Items().Initialize();
 	}
 
 
