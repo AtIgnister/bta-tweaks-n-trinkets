@@ -16,3 +16,4 @@ Pickled Fish
 Vertical Slabs
 Chocolate
 Storage Ring: Stores 5 items, is portable
+Ice Pick: Collects ice and glass - idea shamelessly stolen from https://www.youtube.com/watch?v=esY0Fsa6fh4
