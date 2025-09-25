@@ -31,6 +31,8 @@ public class ModModels implements ModelEntrypoint {
 		ModelHelper.setItemModel(Items.MagicMirror,() ->
 			new ItemModelStandard(Items.MagicMirror, "TweaksNTrinkets.MagicMirror").setIcon(TweaksNTrinkets.MOD_ID + ":block/magicmirror"));
 
+		ModelHelper.setItemModel(Items.ObsidianGlassShard, () ->
+			new ItemModelStandard(Items.ObsidianGlassShard, "TweaksNTrinkets.ObsidianGlassShard").setIcon(TweaksNTrinkets.MOD_ID + ":block/obsidianglassshard"));
 	}
 
 	@Override

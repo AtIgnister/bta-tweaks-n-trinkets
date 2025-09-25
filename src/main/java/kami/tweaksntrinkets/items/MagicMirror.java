@@ -1,19 +1,9 @@
 package kami.tweaksntrinkets.items;
-import com.mojang.nbt.tags.CompoundTag;
-import com.mojang.nbt.tags.Tag;
-import net.minecraft.client.sound.SoundEngine;
-import net.minecraft.client.sound.SoundEvent;
-import net.minecraft.core.entity.Entity;
 import net.minecraft.core.entity.player.Player;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
-import net.minecraft.core.sound.SoundCategory;
 import net.minecraft.core.world.World;
 import net.minecraft.core.world.chunk.ChunkCoordinates;
-import net.minecraft.client.sound.SoundRepository;
-import com.mojang.nbt.tags.Tag;
-
-import java.util.HashMap;
 
 public class MagicMirror extends Item {
 

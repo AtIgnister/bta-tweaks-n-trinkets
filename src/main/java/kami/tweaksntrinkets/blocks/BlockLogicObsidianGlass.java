@@ -1,5 +1,6 @@
 package kami.tweaksntrinkets.blocks;
 
+import kami.tweaksntrinkets.items.Items;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.BlockLogicGlassTinted;
 import net.minecraft.core.block.entity.TileEntity;
@@ -16,10 +17,16 @@ public class BlockLogicObsidianGlass extends BlockLogicGlassTinted {
 
 	@Override
 	public ItemStack[] getBreakResult(World world, EnumDropCause dropCause, int meta, TileEntity tileEntity) {
-		//TODO: make this have a 1 in 3 chance to drop glass shards you can use to craft tools when broken normally
 		if(dropCause == EnumDropCause.SILK_TOUCH || dropCause == EnumDropCause.EXPLOSION) {
 			return new ItemStack[]{new ItemStack(Blocks.ObsidianGlass, 1)};
 		};
+
+		Random rand = new Random();
+		int randomInt = rand.nextInt(11);
+		if(randomInt == 3) {
+			int amount = rand.nextInt(3);
+			return new ItemStack[]{new ItemStack(Items.ObsidianGlassShard, amount)};
+		}
 
 		return null;
 	}
