@@ -1,2 +1,2 @@
 # Tweaks N' Trinkets
-A small modding adding various unrelated items.
+A small mod adding various unrelated items.
