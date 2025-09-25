@@ -14,6 +14,7 @@ import net.minecraft.core.item.Items;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.RecipeBuilder;
+import turniplabs.halplibe.helper.recipeBuilders.RecipeBuilderBlastFurnace;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
@@ -25,6 +26,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	public final RecipeNamespace TWEAKSNTRINKETS = new RecipeNamespace();
+	public final RecipeBuilderBlastFurnace BlastRecipeBuilder = new RecipeBuilderBlastFurnace(MOD_ID);
 
     @Override
     public void onInitialize() {
@@ -56,6 +58,11 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 			.addInput(Items.NETHERCOAL)
 			.addInput(Blocks.TORCH_COAL)
 			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 4));
+
+		// TODO: add serverside entry for this
+		BlastRecipeBuilder
+			.setInput(Blocks.COBBLE_NETHERRACK_IGNEOUS)
+			.create(MOD_ID + ":ObsidianGlass", kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass);
 	}
 
 	@Override
