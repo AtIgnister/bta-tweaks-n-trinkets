@@ -3,12 +3,14 @@ package kami.tweaksntrinkets;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.Blocks;
+import net.minecraft.core.block.tag.BlockTags;
 import net.minecraft.core.data.DataLoader;
 import net.minecraft.core.data.registry.Registries;
 import net.minecraft.core.data.registry.recipe.RecipeGroup;
 import net.minecraft.core.data.registry.recipe.RecipeNamespace;
 import net.minecraft.core.data.registry.recipe.RecipeSymbol;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
+import net.minecraft.core.data.tag.Tag;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
 import org.slf4j.Logger;
@@ -42,7 +44,11 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 		TWEAKSNTRINKETS.register("blocks", WORKBENCH);
 
 		List<ItemStack> itemStacks = new LinkedList<>();
-		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock));
+		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock.withLightEmission(14)));
+		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass
+			.withBlastResistance(50)
+			.withHardness(0)
+		));
 		Registries.ITEM_GROUPS.register("blocks", itemStacks);
 
 

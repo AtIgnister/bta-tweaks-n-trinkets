@@ -1,4 +1,8 @@
 tile.tweaksntrinkets.nether.torch.name = Nether Torch
 tile.tweaksntrinkets.nether.torch.desc = A Torch made of Nether Coal... Spooky.
+
+tile.tweaksntrinkets.obsidian.glass.name = Obsidian Glass
+tile.tweaksntrinkets.obsidian.glass.desc = Immune to explosions... Breaks instantly from anything else. Don't ask me how that works.
+
 item.tweaksntrinkets.magicmirror.name = Magic Mirror
 item.tweaksntrinkets.magicmirror.desc = A legally distinct magic mirror.
