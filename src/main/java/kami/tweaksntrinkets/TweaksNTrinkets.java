@@ -1,5 +1,7 @@
 package kami.tweaksntrinkets;
 
+import kami.tweaksntrinkets.items.ObsidianDagger;
+import kami.tweaksntrinkets.items.ObsidianGlassShard;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.core.block.Block;
 import net.minecraft.core.block.Blocks;
@@ -10,8 +12,10 @@ import net.minecraft.core.data.registry.recipe.RecipeNamespace;
 import net.minecraft.core.data.registry.recipe.RecipeSymbol;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryBlastFurnace;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
+import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
+import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import turniplabs.halplibe.helper.RecipeBuilder;
@@ -39,6 +43,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 	public void onRecipesReady() {
 		RecipeGroup<RecipeEntryCrafting<?,?>> WORKBENCH = new RecipeGroup<>(new RecipeSymbol(new ItemStack(Blocks.WORKBENCH)));
 		TWEAKSNTRINKETS.register("blocks", WORKBENCH);
+		TWEAKSNTRINKETS.register("items", WORKBENCH);
 
 		RecipeGroup<RecipeEntryBlastFurnace> BLASTFURNACE = new RecipeGroup<>(new RecipeSymbol(new ItemStack(Blocks.FURNACE_BLAST_ACTIVE)));
 		TWEAKSNTRINKETS.register("blast_furnace", BLASTFURNACE);
@@ -49,10 +54,11 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 			.withBlastResistance(50)
 			.withHardness(0)
 		));
-		Registries.ITEM_GROUPS.register("blocks", itemStacks);
+		Registries.ITEM_GROUPS.register("items", itemStacks);
 
 		itemStacks.clear();
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.items.Items.ObsidianGlassShard));
+		itemStacks.add(new ItemStack(kami.tweaksntrinkets.items.Items.ObsidianDagger));
 		Registries.ITEM_GROUPS.register("items", itemStacks);
 
 
@@ -63,6 +69,17 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 			.addInput(Items.NETHERCOAL)
 			.addInput(Blocks.TORCH_COAL)
 			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 4));
+
+		// TODO: add serverside recipe
+		RecipeBuilder.Shaped(MOD_ID)
+			.addInput('S', Items.STICK)
+			.addInput('O', kami.tweaksntrinkets.items.Items.ObsidianGlassShard)
+			.setShape(
+				"_OO",
+				"OOO",
+				"SO_"
+			)
+			.create("itemGroupObsidianDagger", new ItemStack(kami.tweaksntrinkets.items.Items.ObsidianDagger, 4));
 
 		BlastRecipeBuilder
 			.setInput(Blocks.COBBLE_NETHERRACK_IGNEOUS)

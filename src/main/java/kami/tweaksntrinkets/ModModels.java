@@ -33,6 +33,9 @@ public class ModModels implements ModelEntrypoint {
 
 		ModelHelper.setItemModel(Items.ObsidianGlassShard, () ->
 			new ItemModelStandard(Items.ObsidianGlassShard, "TweaksNTrinkets.ObsidianGlassShard").setIcon(TweaksNTrinkets.MOD_ID + ":block/obsidianglassshard"));
+
+		ModelHelper.setItemModel(Items.ObsidianDagger, () ->
+			new ItemModelStandard(Items.ObsidianDagger, "TweaksNTrinkets.ObsidianDagger").setIcon(TweaksNTrinkets.MOD_ID + ":block/obsidiandagger"));
 	}
 
 	@Override

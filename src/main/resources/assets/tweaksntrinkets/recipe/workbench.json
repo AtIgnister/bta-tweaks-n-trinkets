@@ -1,16 +1,11 @@
 [
   {
-    "name": "tweaksntrinkets:blocks/nether_torch",
+    "name": "tweaksntrinkets:blocks/ObsidianGlass",
     "type": "minecraft:crafting/shapeless",
     "inputs": [
       {
         "stack": {
           "id": "minecraft:item/stick"
-        }
-      },
-      {
-        "stack": {
-          "id": "minecraft:block/torch_coal"
         }
       }
     ],
@@ -18,5 +13,31 @@
       "id": "tweaksntrinkets:block/nether_torch"
     },
     "consumeContainers": true
+  },
+  {
+    "name": "tweaksntrinkets:items/obsidian_glass_dagger",
+    "type": "minecraft:crafting/shaped",
+    "pattern": [
+      "_OO",
+      "OOO",
+      "SO_"
+    ],
+    "symbols": [
+      {
+        "symbol": "O",
+        "stack": {
+          "id": "tweaksntrinkets:ObsidianGlassShard"
+        }
+      },
+      {
+        "symbol": "S",
+        "stack": {
+          "id": "minecraft:item/stick"
+        }
+      }
+    ],
+    "result": {
+      "id": "tweaksntrinkets:ObsidianDagger"
+    }
   }
 ]
