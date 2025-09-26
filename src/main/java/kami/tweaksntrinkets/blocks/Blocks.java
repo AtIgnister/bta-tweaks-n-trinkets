@@ -17,6 +17,7 @@ public class Blocks {
 			BlockLogicNetherTorch::new
 		);
 	public static Block<BlockLogicObsidianGlass> ObsidianGlass = new BlockBuilder(TweaksNTrinkets.MOD_ID)
+		.setHardness(0.1F)
 		.setResistance(50)
 		.setLightOpacity(15)
 		.setUseInternalLight()

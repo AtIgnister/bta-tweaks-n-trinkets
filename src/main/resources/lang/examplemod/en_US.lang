@@ -7,5 +7,8 @@ tile.tweaksntrinkets.obsidian.glass.desc = Immune to explosions... Breaks instan
 item.tweaksntrinkets.magicmirror.name = Magic Mirror
 item.tweaksntrinkets.magicmirror.desc = A legally distinct magic mirror.
 
-item.tweaksntrinkets.obsidianGlassShard.name = Obsidian Glass Shard
-item.tweaksntrinkets.obsidianGlassShard.desc = A shard of Obsidian Glass. Sharp, but not exactly durable.
+item.tweaksntrinkets.obsidian_glass_shard.name = Obsidian Glass Shard
+item.tweaksntrinkets.obsidian_glass_shard.desc = A shard of Obsidian Glass. Sharp, but not exactly durable.
+
+item.tweaksntrinkets.obsidianDagger.name = Obsidian Glass Dagger
+item.tweaksntrinkets.obsidianDagger.desc = A shiny obsidian glass dagger. Breaks very easily.

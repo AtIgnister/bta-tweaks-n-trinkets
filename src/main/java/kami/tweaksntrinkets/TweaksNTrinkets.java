@@ -52,7 +52,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock.withLightEmission(14)));
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass
 			.withBlastResistance(50)
-			.withHardness(0)
+			.withHardness(0.1F)
 		));
 		Registries.ITEM_GROUPS.register("blocks", itemStacks);
 
