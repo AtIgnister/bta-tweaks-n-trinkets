@@ -1,0 +1,14 @@
+[
+  {
+    "name": "tweaksntrinkets:blast_furnace/obsidian_glass",
+    "type": "minecraft:smelting/blast",
+    "input": {
+      "stack": {
+        "id": "minecraft:block/cobble_netherrack_igneous"
+      }
+    },
+    "output": {
+      "id": "tweaksntrinkets:block/obsidian_glass"
+    }
+  }
+]

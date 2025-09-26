@@ -8,6 +8,7 @@ import net.minecraft.core.data.registry.Registries;
 import net.minecraft.core.data.registry.recipe.RecipeGroup;
 import net.minecraft.core.data.registry.recipe.RecipeNamespace;
 import net.minecraft.core.data.registry.recipe.RecipeSymbol;
+import net.minecraft.core.data.registry.recipe.entry.RecipeEntryBlastFurnace;
 import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
@@ -39,6 +40,9 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 		RecipeGroup<RecipeEntryCrafting<?,?>> WORKBENCH = new RecipeGroup<>(new RecipeSymbol(new ItemStack(Blocks.WORKBENCH)));
 		TWEAKSNTRINKETS.register("blocks", WORKBENCH);
 
+		RecipeGroup<RecipeEntryBlastFurnace> BLASTFURNACE = new RecipeGroup<>(new RecipeSymbol(new ItemStack(Blocks.FURNACE_BLAST_ACTIVE)));
+		TWEAKSNTRINKETS.register("blast_furnace", BLASTFURNACE);
+
 		List<ItemStack> itemStacks = new LinkedList<>();
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock.withLightEmission(14)));
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass
@@ -53,13 +57,13 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 
 
 		DataLoader.loadRecipesFromFile("/assets/tweaksntrinkets/recipe/workbench.json");
+		DataLoader.loadRecipesFromFile("/assets/tweaksntrinkets/recipe/blast_furnace.json");
 
 		RecipeBuilder.Shapeless(MOD_ID)
 			.addInput(Items.NETHERCOAL)
 			.addInput(Blocks.TORCH_COAL)
 			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 4));
 
-		// TODO: add serverside entry for this
 		BlastRecipeBuilder
 			.setInput(Blocks.COBBLE_NETHERRACK_IGNEOUS)
 			.create(MOD_ID + ":ObsidianGlass", kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass);
