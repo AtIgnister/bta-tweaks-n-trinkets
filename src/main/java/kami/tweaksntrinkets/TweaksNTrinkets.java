@@ -54,7 +54,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 			.withBlastResistance(50)
 			.withHardness(0)
 		));
-		Registries.ITEM_GROUPS.register("items", itemStacks);
+		Registries.ITEM_GROUPS.register("blocks", itemStacks);
 
 		itemStacks.clear();
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.items.Items.ObsidianGlassShard));
