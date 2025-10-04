@@ -15,6 +15,7 @@ import net.minecraft.core.data.registry.recipe.entry.RecipeEntryCrafting;
 import net.minecraft.core.item.Item;
 import net.minecraft.core.item.ItemStack;
 import net.minecraft.core.item.Items;
+import net.minecraft.core.sound.BlockSounds;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -53,6 +54,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass
 			.withBlastResistance(50)
 			.withHardness(1.5F)
+			.withSound(BlockSounds.GLASS)
 		));
 		Registries.ITEM_GROUPS.register("blocks", itemStacks);
 
