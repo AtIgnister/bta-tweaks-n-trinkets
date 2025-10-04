@@ -1,11 +1,8 @@
 package kami.tweaksntrinkets.blocks;
 
-import kami.tweaksntrinkets.items.Items;
 import net.minecraft.core.block.Block;
 import kami.tweaksntrinkets.TweaksNTrinkets;
-import net.minecraft.core.block.BlockLogicGlassTinted;
 import net.minecraft.core.block.tag.BlockTags;
-import net.minecraft.core.item.ItemStack;
 import turniplabs.halplibe.helper.BlockBuilder;
 
 public class Blocks {
@@ -17,10 +14,11 @@ public class Blocks {
 			BlockLogicNetherTorch::new
 		);
 	public static Block<BlockLogicObsidianGlass> ObsidianGlass = new BlockBuilder(TweaksNTrinkets.MOD_ID)
-		.setHardness(0.1F)
+		.setHardness(1.5F)
 		.setResistance(50)
 		.setLightOpacity(15)
 		.setUseInternalLight()
+		.setTags(BlockTags.MINEABLE_BY_PICKAXE)
 		.build("obsidian_glass",
 			newBlockID(),
 			BlockLogicObsidianGlass::new

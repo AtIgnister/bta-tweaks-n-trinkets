@@ -52,7 +52,7 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock.withLightEmission(14)));
 		itemStacks.add(new ItemStack(kami.tweaksntrinkets.blocks.Blocks.ObsidianGlass
 			.withBlastResistance(50)
-			.withHardness(0.1F)
+			.withHardness(1.5F)
 		));
 		Registries.ITEM_GROUPS.register("blocks", itemStacks);
 
@@ -70,7 +70,6 @@ public class TweaksNTrinkets implements ModInitializer, RecipeEntrypoint, GameSt
 			.addInput(Blocks.TORCH_COAL)
 			.create("itemGroupNetherTorch", new ItemStack(kami.tweaksntrinkets.blocks.Blocks.NetherTorchBlock, 4));
 
-		// TODO: add serverside recipe
 		RecipeBuilder.Shaped(MOD_ID)
 			.addInput('S', Items.STICK)
 			.addInput('O', kami.tweaksntrinkets.items.Items.ObsidianGlassShard)
